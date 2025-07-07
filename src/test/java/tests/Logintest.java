@@ -8,7 +8,7 @@ import pages.Loginpage;
 public class Logintest extends Baseclass
 {
        
- @Test
+ @Test(priority=1)
  public void naukrilogin() throws InterruptedException
  {
 	 Loginpage lp=new Loginpage(driver);
@@ -25,5 +25,12 @@ hp.profile();
 hp.edit_button();
 hp.select_period();
 hp.save_button();
- }
+}
+@Test(dependsOnMethods="profileupdate")
+public void Rsume_upload()
+{
+	Homepage_profile hp_upload=new Homepage_profile(driver);
+	hp_upload.upload_resume();
+	
+}
 }

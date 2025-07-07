@@ -15,6 +15,7 @@ public class Homepage_profile extends Basepage
 	@FindBy(xpath="//em[contains(@class,'icon edit')]") WebElement edit;
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[11]/div[2]/div[1]/form[1]/div[6]/div[1]/div[2]/span[2]") WebElement period;
 	@FindBy(xpath="//button[@id='saveBasicDetailsBtn']") WebElement Save;
+	@FindBy(xpath="//input[@class='dummyUpload typ-14Bold']") WebElement upload;
    
 	public void profile()
 	{
@@ -32,4 +33,8 @@ public class Homepage_profile extends Basepage
    {
 	   Save.click();
    }
+public void upload_resume()
+{
+   upload.sendKeys("E:\\Accenture\\HemaNagaraju- Test Engineer.docx");
+}
 }
