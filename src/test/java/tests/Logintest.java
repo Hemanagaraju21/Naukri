@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.annotations.Test;
+
 import base.Baseclass;
 import pages.Homepage_profile;
 import pages.Loginpage;
@@ -18,19 +19,14 @@ public class Logintest extends Baseclass
   lp.submit();
   }
 @Test(priority=2)
-public void profileupdate()
+public void profileupdate() throws InterruptedException
 {
 Homepage_profile hp=new Homepage_profile(driver);
 hp.profile();
 hp.edit_button();
 hp.select_period();
 hp.save_button();
-}
-@Test(dependsOnMethods="profileupdate")
-public void Rsume_upload()
-{
-	Homepage_profile hp_upload=new Homepage_profile(driver);
-	hp_upload.upload_resume();
-	
+Thread.sleep(5000);
+hp.upload_resume();
 }
 }
