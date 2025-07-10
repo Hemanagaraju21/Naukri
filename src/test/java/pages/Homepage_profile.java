@@ -35,6 +35,6 @@ public class Homepage_profile extends Basepage
    }
 public void upload_resume()
 {
-   upload.sendKeys("E:\\Accenture\\HemaNagaraju-Test Engineer.docx");
+   upload.sendKeys(System.getProperty("user.dir")+"\\HemaNagaraju-Test Engineer.docx");
 }
 }
