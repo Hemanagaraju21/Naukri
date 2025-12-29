@@ -4,27 +4,19 @@
   <artifactId>NaukriAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.14.0</version>
-          <configuration>
-            <!-- put your configurations here -->
-            <suiteXmlFiles>
-          <suiteXmlFile>testng.xml</suiteXmlFile>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>3.0.0</version> <!-- or a stable version you're using -->
+      <configuration>
+        <suiteXmlFiles>
+          <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Correct relative path -->
         </suiteXmlFiles>
-             </configuration>
-        </plugin>
-        <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.3</version>
-      </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
   <dependencies>
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>

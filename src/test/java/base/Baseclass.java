@@ -16,7 +16,6 @@ public class Baseclass
 	
     driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//	driver.get(prop.getProperty("url_momb")); // driver.get("https://manaoorumanabadi.telangana.gov.in/momb/");
 	driver.get("https://www.naukri.com/");
 	driver.manage().window().maximize();
 	

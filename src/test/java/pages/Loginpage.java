@@ -1,24 +1,25 @@
 package pages;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Loginpage extends Basepage
 {
 
 	WebDriver driver;
-	public Loginpage(WebDriver driver) 
+	//Properties propertey;
+	  
+	public Loginpage(WebDriver driver) throws IOException 
 	{
 		super(driver);
+		//propertey=new Properties();
+		//FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\config.properties");
+	    //propertey.load(fis);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -33,7 +34,8 @@ public class Loginpage extends Basepage
 	}
 	public void username()
 	{
-		username.sendKeys("naga.sntv@gmail.com");
+		
+		username.sendKeys("hemanagaraju.d@gmail.com");
 	}
 	public void password()
 	{
