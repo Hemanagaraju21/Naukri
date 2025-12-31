@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Homepage_profile extends Basepage
 {
@@ -17,10 +19,10 @@ public class Homepage_profile extends Basepage
   {
 	  super(driver);
 	  this.act=new Actions(driver);
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
   }
-	
-	@FindBy(xpath="//div[@class='view-profile-wrapper']//a") WebElement profile;
+	WebDriverWait pwait=new WebDriverWait(driver, Duration.ofSeconds(5));
+	@FindBy(xpath="//div[@class='view-profile-wrapper']//a")WebElement profile;
 	@FindBy(xpath="//em[contains(@class,'icon edit')]") WebElement edit;
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[11]/div[2]/div[1]/form[1]/div[6]/div[1]/div[2]/span[2]") WebElement period;
 	@FindBy(xpath="//button[@id='saveBasicDetailsBtn']") WebElement Save;
@@ -31,7 +33,7 @@ public class Homepage_profile extends Basepage
    	
 	public void profile()
 	{
-		profile.click();
+		pwait.until(ExpectedConditions.elementToBeClickable(profile)).click();
 	}
    public void edit_button()
    {
