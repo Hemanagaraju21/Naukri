@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  FirefoxTest</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 22 14:58:21 IST 2026</td>
+<td>Started on:</td><td>Tue Jan 27 18:49:49 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20201 ms)</td>
+<tr><td>Total time:</td><td>206 seconds (206199 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.Logintest.profileupdate()'><b>profileupdate</b><br>Test class: tests.Logintest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;edit icon&quot;&gt;...&lt;/span&gt; is not clickable at point (548, 56). Other element would receive the click: &lt;div class=&quot;input-field col s12&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=145.0.7587.5)
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/mnjuser/profile&quot;&gt; could not be scrolled into view
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1ab3254738e092f59e0a712278349909, clickElement {id=f.DEA731A864F9A143503C9DDB23BDA602.d.BCBD60F898843837B0CCE6D7920F6071.e.165}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7587.5, chrome: {chromedriverVersion: 145.0.7632.18 (697b997e1127..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65097}, goog:processID: 3296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65097/devtoo..., se:cdpVersion: 145.0.7587.5, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1ab3254738e092f59e0a712278349909)] -&gt; xpath: //div[@id=&apos;lazyResumeHead&apos;]//span[2]]
-Session ID: 1ab3254738e092f59e0a712278349909
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e, clickElement {id=a59d1a92-9646-4bc2-9ded-c2f81049f5e0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.1, moz:accessibilityChecks: false, moz:buildID: 20260116091309, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15340, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e)] -&gt; xpath: //div[@class=&apos;view-profile-wrapper&apos;]//a]
+Session ID: 08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -96,20 +95,23 @@ Session ID: 1ab3254738e092f59e0a712278349909
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.Homepage_profile.rhead_update(Homepage_profile.java:56)
-	at tests.Logintest.profileupdate(Logintest.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.Homepage_profile.profile(Homepage_profile.java:36)
+	at tests.Logintest.profileupdate(Logintest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1377301456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1377301456'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;edit icon&quot;&gt;...&lt;/span&gt; is not clickable at point (548, 56). Other element would receive the click: &lt;div class=&quot;input-field col s12&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=145.0.7587.5)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1876712162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876712162'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/mnjuser/profile&quot;&gt; could not be scrolled into view
 Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1ab3254738e092f59e0a712278349909, clickElement {id=f.DEA731A864F9A143503C9DDB23BDA602.d.BCBD60F898843837B0CCE6D7920F6071.e.165}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7587.5, chrome: {chromedriverVersion: 145.0.7632.18 (697b997e1127..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65097}, goog:processID: 3296, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65097/devtoo..., se:cdpVersion: 145.0.7587.5, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1ab3254738e092f59e0a712278349909)] -&gt; xpath: //div[@id=&apos;lazyResumeHead&apos;]//span[2]]
-Session ID: 1ab3254738e092f59e0a712278349909
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e, clickElement {id=a59d1a92-9646-4bc2-9ded-c2f81049f5e0}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.1, moz:accessibilityChecks: false, moz:buildID: 20260116091309, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15340, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e)] -&gt; xpath: //div[@class=&apos;view-profile-wrapper&apos;]//a]
+Session ID: 08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -125,9 +127,9 @@ Session ID: 1ab3254738e092f59e0a712278349909
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at pages.Homepage_profile.rhead_update(Homepage_profile.java:56)
-	at tests.Logintest.profileupdate(Logintest.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.Homepage_profile.profile(Homepage_profile.java:36)
+	at tests.Logintest.profileupdate(Logintest.java:28)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -142,21 +144,15 @@ Session ID: 1ab3254738e092f59e0a712278349909
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>8</td>
-<td>tests.Logintest@24313fcc</td></tr>
+<td>tests.Logintest@2d2ffcb7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -169,8 +165,8 @@ Session ID: 1ab3254738e092f59e0a712278349909
 <tr>
 <td title='tests.Logintest.naukrilogin()'><b>naukrilogin</b><br>Test class: tests.Logintest</td>
 <td></td>
-<td>0</td>
-<td>tests.Logintest@24313fcc</td></tr>
+<td>10</td>
+<td>tests.Logintest@2d2ffcb7</td></tr>
 </table><p>
 </body>
 </html>

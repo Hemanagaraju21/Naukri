@@ -19,9 +19,9 @@ public class Homepage_profile extends Basepage
   {
 	  super(driver);
 	  this.act=new Actions(driver);
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
   }
-	WebDriverWait pwait=new WebDriverWait(driver, Duration.ofSeconds(5));
+	//WebDriverWait pwait=new WebDriverWait(driver, Duration.ofSeconds(15));
 	@FindBy(xpath="//div[@class='view-profile-wrapper']//a")WebElement profile;
 	@FindBy(xpath="//em[contains(@class,'icon edit')]") WebElement edit;
 	@FindBy(xpath="/html[1]/body[1]/div[6]/div[11]/div[2]/div[1]/form[1]/div[6]/div[1]/div[2]/span[2]") WebElement period;
@@ -33,7 +33,7 @@ public class Homepage_profile extends Basepage
    	
 	public void profile()
 	{
-		pwait.until(ExpectedConditions.elementToBeClickable(profile)).click();
+		profile.click();
 	}
    public void edit_button()
    {
@@ -47,16 +47,16 @@ public class Homepage_profile extends Basepage
    {
 	   Save.click();
    }
-public void upload_resume()
-{
+  public void upload_resume()
+ {
    upload.sendKeys(System.getProperty("user.dir")+"\\HemaNagaraju-Test Engineer.docx");
-}
-public void rhead_update()
-{
-rclick.click();
-hupdate.click();
-act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).keyDown(Keys.ARROW_RIGHT).keyUp(Keys.ARROW_RIGHT).perform();
-hupdate.sendKeys(".");
-rsave.click();
-}
+ }
+ public void rhead_update()
+ {
+ rclick.click();
+ hupdate.click();
+ act.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).keyDown(Keys.ARROW_RIGHT).keyUp(Keys.ARROW_RIGHT).perform();
+ hupdate.sendKeys(".");
+ rsave.click();
+ }
 }

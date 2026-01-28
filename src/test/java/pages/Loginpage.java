@@ -12,15 +12,15 @@ public class Loginpage extends Basepage
 {
 
 	WebDriver driver;
-	//Properties propertey;
+	Properties propertey;
 	  
 	public Loginpage(WebDriver driver) throws IOException 
 	{
 		super(driver);
-		//propertey=new Properties();
-		//FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\config.properties");
-	    //propertey.load(fis);
-		// TODO Auto-generated constructor stub
+		propertey=new Properties();
+		FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
+	    propertey.load(fis);
+		
 	}
 	
 	@FindBy(xpath="//a[@id='login_Layer']") WebElement login;
@@ -35,11 +35,11 @@ public class Loginpage extends Basepage
 	public void username()
 	{
 		
-		username.sendKeys("hemanagaraju.d@gmail.com");
+		username.sendKeys(propertey.getProperty("username"));
 	}
 	public void password()
 	{
-		password.sendKeys("Hema@3975");
+		password.sendKeys(propertey.getProperty("password"));
 		
 	}
     public void submit() throws InterruptedException

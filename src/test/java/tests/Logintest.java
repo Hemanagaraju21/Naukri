@@ -26,15 +26,15 @@ public void profileupdate() throws InterruptedException
 {
 Homepage_profile hp=new Homepage_profile(driver);
 hp.profile();
-Thread.sleep(5000);
+//Thread.sleep(5000);
 hp.edit_button();
-Thread.sleep(5000);
+//Thread.sleep(5000);
 hp.select_period();
-Thread.sleep(5000);
+//Thread.sleep(5000);
 hp.save_button();
-Thread.sleep(5000);
+//Thread.sleep(5000);
 hp.rhead_update();
-Thread.sleep(5000);
+//Thread.sleep(5000);
 hp.upload_resume();
 }
 }
