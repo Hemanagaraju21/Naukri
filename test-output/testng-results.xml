@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="2" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-27T18:49:49 IST" name="ParallelSuite" finished-at="2026-01-27T18:53:16 IST" duration-ms="206199">
+  <suite started-at="2026-02-05T13:08:40 IST" name="ParallelSuite" finished-at="2026-02-05T13:10:45 IST" duration-ms="124549">
     <groups>
     </groups>
-    <test started-at="2026-01-27T18:49:49 IST" name="EdgeTest" finished-at="2026-01-27T18:51:08 IST" duration-ms="78606">
+    <test started-at="2026-02-05T13:08:40 IST" name="EdgeTest" finished-at="2026-02-05T13:09:05 IST" duration-ms="25187">
       <class name="tests.Logintest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@68e5eea7]" started-at="2026-01-27T18:49:49 IST" name="setup" finished-at="2026-01-27T18:51:08 IST" duration-ms="78048" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@68e5eea7]" started-at="2026-02-05T13:08:40 IST" name="setup" finished-at="2026-02-05T13:09:05 IST" duration-ms="25027" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -27,7 +27,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -72,11 +72,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@68e5eea7]" started-at="2026-01-27T18:51:08 IST" name="naukrilogin" finished-at="2026-01-27T18:51:08 IST" duration-ms="0" status="SKIP">
+        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@68e5eea7]" started-at="2026-02-05T13:09:05 IST" name="naukrilogin" finished-at="2026-02-05T13:09:05 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -85,7 +85,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -130,11 +130,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- naukrilogin -->
-        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@68e5eea7]" started-at="2026-01-27T18:51:08 IST" name="profileupdate" finished-at="2026-01-27T18:51:08 IST" duration-ms="0" status="SKIP">
+        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@68e5eea7]" started-at="2026-02-05T13:09:05 IST" name="profileupdate" finished-at="2026-02-05T13:09:05 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -143,7 +143,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 138
-Current browser version is 144.0.3719.92 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
+Current browser version is 144.0.3719.104 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe 
 Host info: host: 'DESKTOP-PP8NB6E', ip: '192.168.0.37'
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
@@ -188,15 +188,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileupdate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@68e5eea7]" started-at="2026-01-27T18:51:08 IST" name="teardown" finished-at="2026-01-27T18:51:08 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@68e5eea7]" started-at="2026-02-05T13:09:05 IST" name="teardown" finished-at="2026-02-05T13:09:05 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.Logintest -->
     </test> <!-- EdgeTest -->
-    <test started-at="2026-01-27T18:49:49 IST" name="ChromeTest" finished-at="2026-01-27T18:51:40 IST" duration-ms="110791">
+    <test started-at="2026-02-05T13:08:40 IST" name="ChromeTest" finished-at="2026-02-05T13:09:56 IST" duration-ms="75618">
       <class name="tests.Logintest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@38afe297]" started-at="2026-01-27T18:49:49 IST" name="setup" finished-at="2026-01-27T18:51:24 IST" duration-ms="94419" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@38afe297]" started-at="2026-02-05T13:08:40 IST" name="setup" finished-at="2026-02-05T13:09:21 IST" duration-ms="40850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,33 +207,33 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@38afe297]" started-at="2026-01-27T18:51:24 IST" name="naukrilogin" finished-at="2026-01-27T18:51:27 IST" duration-ms="3196" status="PASS">
+        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@38afe297]" started-at="2026-02-05T13:09:21 IST" name="naukrilogin" finished-at="2026-02-05T13:09:26 IST" duration-ms="4842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- naukrilogin -->
-        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@38afe297]" started-at="2026-01-27T18:51:27 IST" name="profileupdate" finished-at="2026-01-27T18:51:35 IST" duration-ms="7945" status="FAIL">
+        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@38afe297]" started-at="2026-02-05T13:09:26 IST" name="profileupdate" finished-at="2026-02-05T13:09:49 IST" duration-ms="22793" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <span class="edit icon">...</span> is not clickable at point (548, 8). Other element would receive the click: <div class="nI-gNb-header__wrapper">...</div>
-  (Session info: chrome=145.0.7587.5)
+  (Session info: chrome=146.0.7655.3)
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [98f3b4a633f24252eb85f8960f3887b8, clickElement {id=f.CAD45183259EB453C5EBEF3FBDE6CEE0.d.691FBBAAB70FE127CBECD44B64B11235.e.198}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7587.5, chrome: {chromedriverVersion: 145.0.7632.18 (697b997e1127..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58891}, goog:processID: 17044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58891/devtoo..., se:cdpVersion: 145.0.7587.5, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (98f3b4a633f24252eb85f8960f3887b8)] -> xpath: //div[@id='lazyResumeHead']//span[2]]
-Session ID: 98f3b4a633f24252eb85f8960f3887b8]]>
+Command: [b065c616b3b720266a3efea7d6ec260c, clickElement {id=f.B1FB51510F05D8E3B9C4871C66CCDB27.d.B79B99065628DCC4B29D10D9D98D316A.e.213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7655.3, chrome: {chromedriverVersion: 146.0.7669.0 (cafbc6b4f7102..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, goog:processID: 1440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 146.0.7655.3, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b065c616b3b720266a3efea7d6ec260c)] -> xpath: //div[@id='lazyResumeHead']//span[2]]
+Session ID: b065c616b3b720266a3efea7d6ec260c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="edit icon">...</span> is not clickable at point (548, 8). Other element would receive the click: <div class="nI-gNb-header__wrapper">...</div>
-  (Session info: chrome=145.0.7587.5)
+  (Session info: chrome=146.0.7655.3)
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [98f3b4a633f24252eb85f8960f3887b8, clickElement {id=f.CAD45183259EB453C5EBEF3FBDE6CEE0.d.691FBBAAB70FE127CBECD44B64B11235.e.198}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7587.5, chrome: {chromedriverVersion: 145.0.7632.18 (697b997e1127..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58891}, goog:processID: 17044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58891/devtoo..., se:cdpVersion: 145.0.7587.5, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (98f3b4a633f24252eb85f8960f3887b8)] -> xpath: //div[@id='lazyResumeHead']//span[2]]
-Session ID: 98f3b4a633f24252eb85f8960f3887b8
+Command: [b065c616b3b720266a3efea7d6ec260c, clickElement {id=f.B1FB51510F05D8E3B9C4871C66CCDB27.d.B79B99065628DCC4B29D10D9D98D316A.e.213}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7655.3, chrome: {chromedriverVersion: 146.0.7669.0 (cafbc6b4f7102..., userDataDir: C:\Users\Nagaraju\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, goog:processID: 1440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 146.0.7655.3, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b065c616b3b720266a3efea7d6ec260c)] -> xpath: //div[@id='lazyResumeHead']//span[2]]
+Session ID: b065c616b3b720266a3efea7d6ec260c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -278,15 +278,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileupdate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@38afe297]" started-at="2026-01-27T18:51:35 IST" name="teardown" finished-at="2026-01-27T18:51:40 IST" duration-ms="5139" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@38afe297]" started-at="2026-02-05T13:09:49 IST" name="teardown" finished-at="2026-02-05T13:09:56 IST" duration-ms="7076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.Logintest -->
     </test> <!-- ChromeTest -->
-    <test started-at="2026-01-27T18:49:49 IST" name="FirefoxTest" finished-at="2026-01-27T18:53:16 IST" duration-ms="206199">
+    <test started-at="2026-02-05T13:08:40 IST" name="FirefoxTest" finished-at="2026-02-05T13:10:45 IST" duration-ms="124549">
       <class name="tests.Logintest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@2d2ffcb7]" started-at="2026-01-27T18:49:49 IST" name="setup" finished-at="2026-01-27T18:52:42 IST" duration-ms="172084" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.Logintest@2d2ffcb7]" started-at="2026-02-05T13:08:40 IST" name="setup" finished-at="2026-02-05T13:10:08 IST" duration-ms="87512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,31 +297,31 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@2d2ffcb7]" started-at="2026-01-27T18:52:42 IST" name="naukrilogin" finished-at="2026-01-27T18:52:52 IST" duration-ms="10615" status="PASS">
+        <test-method signature="naukrilogin()[pri:1, instance:tests.Logintest@2d2ffcb7]" started-at="2026-02-05T13:10:08 IST" name="naukrilogin" finished-at="2026-02-05T13:10:12 IST" duration-ms="4284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- naukrilogin -->
-        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@2d2ffcb7]" started-at="2026-01-27T18:52:52 IST" name="profileupdate" finished-at="2026-01-27T18:53:00 IST" duration-ms="8298" status="FAIL">
+        <test-method signature="profileupdate()[pri:2, instance:tests.Logintest@2d2ffcb7]" started-at="2026-02-05T13:10:12 IST" name="profileupdate" finished-at="2026-02-05T13:10:15 IST" duration-ms="2623" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[Element <a href="/mnjuser/profile"> could not be scrolled into view
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e, clickElement {id=a59d1a92-9646-4bc2-9ded-c2f81049f5e0}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.1, moz:accessibilityChecks: false, moz:buildID: 20260116091309, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15340, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e)] -> xpath: //div[@class='view-profile-wrapper']//a]
-Session ID: 08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e]]>
+Command: [7d9be0a0-ae20-4ad5-a405-2adfc1d95240, clickElement {id=0c57f8e1-5e0b-4502-ac6b-02824f8706bb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13952, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7d9be0a0-ae20-4ad5-a405-2adfc1d95240)] -> xpath: //a[normalize-space()='View profile']]
+Session ID: 7d9be0a0-ae20-4ad5-a405-2adfc1d95240]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="/mnjuser/profile"> could not be scrolled into view
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e, clickElement {id=a59d1a92-9646-4bc2-9ded-c2f81049f5e0}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.1, moz:accessibilityChecks: false, moz:buildID: 20260116091309, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15340, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e)] -> xpath: //div[@class='view-profile-wrapper']//a]
-Session ID: 08ea6d6c-c5af-42d1-ad72-1c7b7825bf0e
+Command: [7d9be0a0-ae20-4ad5-a405-2adfc1d95240, clickElement {id=0c57f8e1-5e0b-4502-ac6b-02824f8706bb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.3, moz:accessibilityChecks: false, moz:buildID: 20260203002554, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13952, moz:profile: C:\Users\Nagaraju\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (7d9be0a0-ae20-4ad5-a405-2adfc1d95240)] -> xpath: //a[normalize-space()='View profile']]
+Session ID: 7d9be0a0-ae20-4ad5-a405-2adfc1d95240
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -366,7 +366,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileupdate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@2d2ffcb7]" started-at="2026-01-27T18:53:00 IST" name="teardown" finished-at="2026-01-27T18:53:16 IST" duration-ms="15159" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.Logintest@2d2ffcb7]" started-at="2026-02-05T13:10:15 IST" name="teardown" finished-at="2026-02-05T13:10:45 IST" duration-ms="30074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

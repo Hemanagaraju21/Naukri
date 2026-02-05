@@ -22,9 +22,9 @@ public class Homepage_profile extends Basepage
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
   }
 	//WebDriverWait pwait=new WebDriverWait(driver, Duration.ofSeconds(15));
-	@FindBy(xpath="//div[@class='view-profile-wrapper']//a")WebElement profile;
-	@FindBy(xpath="//em[contains(@class,'icon edit')]") WebElement edit;
-	@FindBy(xpath="/html[1]/body[1]/div[6]/div[11]/div[2]/div[1]/form[1]/div[6]/div[1]/div[2]/span[2]") WebElement period;
+	@FindBy(xpath="//a[normalize-space()='View profile']")WebElement profile;
+	@FindBy(xpath="//em[@class='icon edit ']") WebElement edit;
+	@FindBy(xpath="//span[@class='chip-item active']") WebElement period;
 	@FindBy(xpath="//button[@id='saveBasicDetailsBtn']") WebElement Save;
 	@FindBy(xpath="//div[@id='lazyResumeHead']//span[2]") WebElement rclick;
 	@FindBy(xpath="//textarea[@id='resumeHeadlineTxt']") WebElement hupdate;
