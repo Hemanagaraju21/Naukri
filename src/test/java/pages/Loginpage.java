@@ -2,16 +2,20 @@ package pages;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Loginpage extends Basepage
 {
 
-	WebDriver driver;
 	Properties propertey;
 	  
 	public Loginpage(WebDriver driver) throws IOException 
@@ -30,21 +34,25 @@ public class Loginpage extends Basepage
 	
 	public void loginname()
 	{
-		login.click();
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    wait.until(ExpectedConditions.elementToBeClickable(login)).click();
 	}
+
 	public void username()
 	{
-		
-		username.sendKeys(propertey.getProperty("username"));
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    wait.until(ExpectedConditions.visibilityOf(username))
+	            .sendKeys(propertey.getProperty("username"));
 	}
+
 	public void password()
 	{
-		password.sendKeys(propertey.getProperty("password"));
-		
+	    password.sendKeys(propertey.getProperty("password"));
 	}
-    public void submit() throws InterruptedException
-    {
-         submit.click();
-         Thread.sleep(10);  
-    }
+
+	public void submit()
+	{
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	    wait.until(ExpectedConditions.elementToBeClickable(submit)).click();
+	}
 }
